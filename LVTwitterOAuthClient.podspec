@@ -12,7 +12,8 @@ Pod::Spec.new do |s|
 	s.source       =  { :git => 'https://github.com/bilby91/LVTwitterOAuthClient.git', :tag => s.version.to_s }
 
 	s.dependency			'OAuthCore'
-	s.platform     =  :ios, '6.0'
+	  s.platforms     = { :ios => "6.0", :tvos => "9.0" }
+
 	s.frameworks   =	'Social', 'Accounts'
 
 	s.source_files =  'LVTwitterOAuthClient/*.{h,m}'
